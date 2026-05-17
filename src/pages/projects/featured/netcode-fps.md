@@ -26,15 +26,15 @@ highlights:
   - Latency-aware design balancing responsiveness and authority
 
 gallery:
-  - src: /Projects/Netcode/semi-authorative-architecture.png
+  - src: Projects/Netcode/semi-authorative-architecture.png
     alt: Semi-Authoritative Architecture
     caption: Semi-Authoritative Architecture
 
-  - src: /Projects/Netcode/client-prediction-reconciliation.png 
+  - src: Projects/Netcode/client-prediction-reconciliation.png 
     alt: Client Prediction Reconciliation
     caption: Client Prediction Reconciliation
     
-  - src: /Projects/Netcode/rollback-replay-buffers.png
+  - src: Projects/Netcode/rollback-replay-buffers.png
     alt: Rollback Replay Buffers
     caption: Rollback Replay Buffers
  
@@ -259,21 +259,21 @@ layout: ../../../layouts/netcode-fps.astro
   <h2>Technical Gallery</h2>
 
   <figure class="technical-diagram">
-    <img src="/Projects/Netcode/semi-authorative-architecture.png" alt="semi-authorative-architecture">
+    <img src="Projects/Netcode/semi-authorative-architecture.png" alt="semi-authorative-architecture">
     <figcaption>
       Semi-authoritative client-server model balancing local responsiveness with server validation.
     </figcaption>
   </figure>
 
   <figure class="technical-diagram">
-    <img src="/Projects/Netcode/client-prediction-reconciliation.png" alt="client-prediciton-reconciliation">
+    <img src="Projects/Netcode/client-prediction-reconciliation.png" alt="client-prediciton-reconciliation">
     <figcaption>
       Planned prediction and reconciliation flow for improving movement correction.
     </figcaption>
   </figure>
 
   <figure class="technical-diagram">
-    <img src="/Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
+    <img src="Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
     <figcaption>
       Rollback and replay buffer concept for storing movement inputs across network ticks.
     </figcaption>

@@ -25,22 +25,22 @@ highlights:
   - Multi-pass rendering including post-processing (glow/bloom)
 
 gallery:
-  - src: /Projects/DX11/hero.png
+  - src: Projects/DX11/hero.png
     alt: Terrain Rendering Overview
     caption: Terrain rendering pass with dynamic directional lighting.
 
-  - src: /Projects/DX11/debug.png
+  - src: Projects/DX11/debug.png
     alt: Debug & Lighting Controls 
     caption: Runtime debug interface for manipulating lighting and rendering parameters.
-  - src: /Projects/DX11/terrain-lighting.png
+  - src: Projects/DX11/terrain-lighting.png
     alt: Point light terrain interaction
     caption: Real-time point light interaction with terrain geometry and shadowing.
 
-  - src: /Projects/DX11/vertex-displaced-water.png
+  - src: Projects/DX11/vertex-displaced-water.png
     alt: Vertex Displacement on Water Surface
     caption: Vertex-displaced water surface animated through HLSL shaders.
 
-  - src: /Projects/DX11/alt-light.png
+  - src: Projects/DX11/alt-light.png
     alt: Alternative terrain lighting configuration.
     caption: Alternative lighting configuration demonstrating runtime scene control.
 

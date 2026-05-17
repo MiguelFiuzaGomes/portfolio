@@ -26,34 +26,34 @@ highlights:
   - Focus on player control, responsiveness, and gameplay feel
 
 gallery:
-  - src: /Projects/VeilRyders/final-level.png
+  - src: Projects/VeilRyders/final-level.png
     alt: Final Level Layout
     caption: Final downhill gameplay environment used for movement and traversal testing.
-  - src: /Projects/VeilRyders/mockup.jpeg
+  - src: Projects/VeilRyders/mockup.jpeg
     alt: UI Mockup
     caption: Early gameplay mockup used during movement system prototyping.
-  - src: /Projects/VeilRyders/mock-realised.jpg
+  - src: Projects/VeilRyders/mock-realised.jpg
     alt: UI Realised 
     caption: In-Engine Gameplay Implementation
-  - src: /Projects/VeilRyders/bp-player-movement.png
+  - src: Projects/VeilRyders/bp-player-movement.png
     alt: Blueprint-based movement logic controlling downhill traversal and steering behaviour.
     caption: Movement System
-  - src: /Projects/VeilRyders/bp-turning.png
+  - src: Projects/VeilRyders/bp-turning.png
     alt: Player Turning Blueprint
     caption: Turning system used to influence board direction and player handling responsiveness.
-  - src: /Projects/VeilRyders/bp-floor-influence.png
+  - src: Projects/VeilRyders/bp-floor-influence.png
     alt: Floor Influence
     caption: Slope Influence Calculation
-  - src: /Projects/VeilRyders/bp-slope-speed-up.png
+  - src: Projects/VeilRyders/bp-slope-speed-up.png
     alt: Slope Speed Up Blueprint
     caption: Slope-Based Acceleration
-  - src: /Projects/VeilRyders/bp-board-trace.png
+  - src: Projects/VeilRyders/bp-board-trace.png
     alt: Board Trace Blueprint
     caption: Terrain tracing system used for slope detection and board alignment.
-  - src: /Projects/VeilRyders/bp-board-alignment.png
+  - src: Projects/VeilRyders/bp-board-alignment.png
     alt: Board alignment logic adapting player orientation to terrain gradients.
     caption: Board Alignment Blueprint
-  - src: /Projects/VeilRyders/cpp-slope-speed-up.png
+  - src: Projects/VeilRyders/cpp-slope-speed-up.png
     alt: C++ Integration of Slope Speed Up
     caption: C++ implementation of slope-influenced acceleration and momentum handling.
 

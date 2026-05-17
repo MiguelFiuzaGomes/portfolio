@@ -27,60 +27,60 @@ highlights:
 #Gallery
 gallery:
 #1
-  - src: /Projects/MSc/flowchart.png
+  - src: Projects/MSc/flowchart.png
     alt: Terrain generation workflow diagram
     caption: Overview of the procedural terrain generation pipeline and biome evaluation workflow.
 #2
-  - src: /Projects/MSc/domain-warped-noise.png
+  - src: Projects/MSc/domain-warped-noise.png
     alt: Domain Warped Noise
     caption: Domain-warped noise used to reduce visible terrain repetition and improve large-scale variation.
 #3
-  - src: /Projects/MSc/generated-heightmap.png
+  - src: Projects/MSc/generated-heightmap.png
     alt: Generated Heightmap
     caption: Procedurally generated heightmap produced from layered fractal noise sampling.
 #4
-  - src: /Projects/MSc/temperature-map.png
+  - src: Projects/MSc/temperature-map.png
     alt: Temperature Map
     caption: Temperature distribution map used during biome classification and environmental evaluation.
 #5
-  - src: /Projects/MSc/humidity-map.png
+  - src: Projects/MSc/humidity-map.png
     alt: Humidity Map
     caption: Humidity parameter map contributing to rule-based biome placement.
 #6
-  - src: /Projects/MSc/initial-biome-classification.png
+  - src: Projects/MSc/initial-biome-classification.png
     alt: Initial Biome Classification
     caption: Initial biome classification generated from layered environmental rule evaluation.
 
 #10
-  - src: /Projects/MSc/biome-coloured-heightmap.png
+  - src: Projects/MSc/biome-coloured-heightmap.png
     alt: Biome-Coloured Heightmap
     caption: Terrain heightmap visualised with biome-based colour assignment.
 #11
-  - src: /Projects/MSc/biome-blending-shader.png
+  - src: Projects/MSc/biome-blending-shader.png
     alt: Biome Blending Shader
     caption: GPU-based biome blending implemented using Unity Shader Graph.
 #12
-  - src: /Projects/MSc/shadergraph-blending-comparison.png
+  - src: Projects/MSc/shadergraph-blending-comparison.png
     alt: ShaderGraph Blending Comparison
     caption: Comparison between hard biome borders and shader-driven biome blending.
 #13
-  - src: /Projects/MSc/heightmap-variation.png
+  - src: Projects/MSc/heightmap-variation.png
     alt: Heightmap Variation
     caption: Variation in terrain structure produced through procedural parameter adjustments.
 #14
-  - src: /Projects/MSc/generated-terrain-meshes.png 
+  - src: Projects/MSc/generated-terrain-meshes.png 
     alt: Generated Terrain Meshes
     caption: Runtime-generated terrain meshes constructed from procedural height data.
 #15
-  - src: /Projects/MSc/biome-post-processing-comparison.png
+  - src: Projects/MSc/biome-post-processing-comparison.png
     alt: Biome Post-Processing Comparison
     caption: Visual comparison of terrain rendering before and after biome post-processing.
  #16
-  - src: /Projects/MSc/endless-terrain-streaming.png
+  - src: Projects/MSc/endless-terrain-streaming.png
     alt: Endless Terrain Streaming
     caption: Runtime chunk streaming system supporting continuous terrain traversal.
 #18
-  - src: /Projects/MSc/known-chunk-seam-limitation.png
+  - src: Projects/MSc/known-chunk-seam-limitation.png
     alt: Known Chunk Seam Limitation
     caption: Example of visible seam artefacts between independently generated terrain chunks.  
 
