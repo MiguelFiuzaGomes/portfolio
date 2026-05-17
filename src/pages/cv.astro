@@ -2,6 +2,10 @@
 import "../css/Global/navbar.css"
 import "../css/Global/global.css"
 import "../css/Main/cv.css";
+
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 
@@ -16,19 +20,19 @@ import "../css/Main/cv.css";
 
   <!-- Navigation -->
   <div class="nav-bar">
-    <a href="/" class="nav-button">Home</a>
-    <a href="/about" class="nav-button">About</a>
-    <a href="/projects" class="nav-button">Projects </a>
-    <a href="/contacts" class="nav-button">Contact</a>
+    <a href={`${base}`} class="nav-button">Home</a>
+    <a href={`${base}about`} class="nav-button">About</a>
+    <a href={`${base}projects`} class="nav-button">Projects</a>
+    <a href={`${base}contacts`} class="nav-button">Contact</a>
   </div>
 
 <section class="cv-page">
   
   <div class="cv-actions">
-    <a href="/cv/miguel-fiuza-gomes-cv.pdf" download class="cv-button">
+    <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} download class="cv-button">
       Download PDF
     </a>
-    <a href="/cv/miguel-fiuza-gomes-cv.pdf" target="_blank" class="cv-button secondary">
+    <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} target="_blank" class="cv-button secondary">
       Open PDF
     </a>
   </div>
