@@ -1,4 +1,5 @@
 ---
+
 title: Unity Netcode FPS Prototype (Client-Server Architecture)
 slug: unity-netcode-fps
 tech: [C#, Unity, Netcode for GameObjects, Multiplayer Systems]
@@ -273,7 +274,7 @@ layout: ../../../layouts/netcode-fps.astro
   </figure>
 
   <figure class="technical-diagram">
-    <img src="/Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
+    <img src="Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
     <figcaption>
       Rollback and replay buffer concept for storing movement inputs across network ticks.
     </figcaption>
