@@ -1,0 +1,227 @@
+<!-- Include -->
+---
+import "/src/css/Main/project.css"
+import "/src/css/Global/global.css"
+import "/src/css/Global/navbar.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Miguel Fiuza Gomes - Projects</title>
+	</head>
+
+	<body>
+
+    <!-- Navigation -->
+		<div class="nav-bar">
+      <a href="/" class="nav-button">Home</a>
+			<a href="/about" class="nav-button">About</a>
+			<a href="/cv" class="nav-button">CV</a>
+			<a href="/contacts" class="nav-button">Contact</a>
+		</div>
+
+    <main class="projects-page">
+		
+
+    <!-- Projects -->
+    <section class="project-list">
+
+      <div class="section-divider">
+          <h1>Featured Projects</h1>
+        </div>
+
+      <!-- Featured Projects -->
+
+      <div class="featured-projects">
+        <div class="project-card">
+          <a href="/projects/featured/msc-procedural-terrain" class="project-row">
+            
+            <div class="project-image">
+              <img src="/ProjectSnapshots/MastersSnapshot.png" class="snapshot" alt="MSc Procedural Terrain Project Review"/>
+            </div>
+
+            <div class="project-content">
+              <h3>Procedural Terrain & Biome Generation System</h3>
+              
+              <p>
+                A modular terrain generation pipeline combining rule-based biome evaluation,
+                domain-warped noise, and infinite chunk streaming to generate large-scale
+                landscapes at runtime.
+              </p>
+
+              <span class="project-tech">
+                Unity · C# · Shader Graph · Procedural Generation
+              </span>
+          
+            </div>
+        
+          </a>
+        
+        </div>
+
+        <div class="project-card">
+          <a href="/projects/featured/dx11-rendering-pipeline" class="project-row">
+          
+            <div class="project-image">
+              <img src="/ProjectSnapshots/RT-Render-DX11.png" class="snapshot" alt="Real-Time Render Pipeline with DX11"/>
+            </div>
+
+            <div class="project-content">
+              <h3>DX11 Real-Time Rendering Pipeline</h3>
+              
+              <p>
+                A custom DirectX 11 rendering pipeline implementing real-time lighting, shader-based effects, 
+                and a structured graphics pipeline built from scratch in C++ and HLSL.
+              </p>
+
+              <span class="project-tech">
+                C++ · DirectX 11 · HLSL · Real-Time Rendering
+              </span>
+          
+            </div>
+        
+         </a>
+        
+        </div>
+
+        <div class="project-card">
+          <a href="/projects/featured/netcode-fps" class="project-row">
+          
+          <div class="project-image">
+            <img src="/ProjectSnapshots/netcode-fps.png" class="snapshot" alt="Unity Netcode FPS Prototype (Client-Server Architecture)"/>
+          </div>
+
+          <div class="project-content">
+            <h3>Unity Netcode FPS Prototype</h3>
+            
+            <p>
+              A multiplayer FPS prototype using a semi-authoritative client-server architecture, 
+              balancing responsive client-side movement with server-side validation for consistency.
+            </p>
+
+            <span class="project-tech">
+              Unity · C# · Netcode for GameObjects · Unity Transport
+            </span>
+        
+          </div>
+        
+        </a>
+        
+        </div>
+
+        <div class="project-card">
+          <a href="/projects/featured/veilryders" class="project-row">
+          
+          <div class="project-image">
+            <img src="/ProjectSnapshots/veilryders.png" class="snapshot" alt="VeilRyders — Physics-Driven Snowboarding Prototype"/>
+          </div>
+
+          <div class="project-content">
+            <h3>VeilRyders (Snowboarding Game)</h3>
+            
+            <p>
+              A physics-driven snowboarding prototype developed in Unreal Engine,
+              focusing on movement feel, terrain interaction, 
+              and progression from Blueprint systems to C++. 
+            </p>
+
+            <span class="project-tech">
+              Unreal Engine · C++ · Blueprints · Physics Systems
+            </span>
+      
+          </div>
+      
+        </a>
+      
+        </div>
+      
+      </div>
+
+
+      <!-- Other Projects -->
+      <div class="other-projects">
+
+        <div class="section-divider">
+          <h1>Other Projects</h1>
+        </div>
+
+        <div class="projects-list">
+
+          <div class="other-project-card">
+            <a href="/projects/other/sleeping-elements" class="other-project-row">
+              
+              <div class="project-content">
+                <h3>Sleeping Elements</h3>
+
+                <p>
+                  A 2D roguelike developed in Unity, featuring ranged combat,
+                  enemy encounters, power-ups, and a companion progression system
+                  connected to a separate mobile app.
+                </p>
+
+                <span class="project-tech">
+                  Unity · C# · Gameplay Systems · Roguelike Design
+                </span>
+              </div>
+        
+            </a>
+        
+          </div>
+
+
+          <div class="other-project-card">
+            <a href="/projects/other/ourobros" class="other-project-row">
+
+              <div class="project-content">
+                <h3>Ourobros</h3>
+
+                <p>
+                  A 2D single-player game developed in Love2D, built around two
+                  playable characters with distinct movement and combat abilities
+                  used to progress through linear level challenges.
+                </p>
+
+                <span class="project-tech">
+                  Love2D · Lua · 2D Gameplay · Character Mechanics
+                </span>
+        
+              </div>
+        
+            </a>
+        
+          </div>
+
+
+          <div class="other-project-card">
+            <a href="/projects/other/project-trigram" class="other-project-row">
+
+              <div class="project-content">
+                <h3>Project Trigram</h3>
+
+                <p>
+                  An Unreal Engine prototype developed as part of a team project,
+                  exploring real-time gameplay systems, level flow, and interactive
+                  mechanics within a 3D environment.
+                </p>
+
+                <span class="project-tech">
+                  Unreal Engine · Blueprints · 3D Gameplay · Team Project
+                </span>
+        
+              </div>
+        
+            </a>
+        
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    </main>
+  </body>
+</html>

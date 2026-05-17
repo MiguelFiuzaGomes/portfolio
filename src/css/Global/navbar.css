@@ -1,0 +1,22 @@
+/* Navigation */
+.nav-bar {
+  background-color: #1a1a1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.nav-button {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}

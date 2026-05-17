@@ -1,0 +1,32 @@
+---
+import "../css/Global/global.css";
+import "../css/Global/navbar.css"
+import "../css/Main/contacts.css"
+
+// BaseLayout.astro
+const { title } = Astro.props;
+
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <title>Miguel Fiuza Gomes - Contacts</title>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <a href="/" class="nav-button">Home</a>
+      <a href="/about" class="nav-button">About</a>
+      <a href="/projects" class="nav-button">Projects</a>
+      <a href="/cv" class="nav-button">CV</a>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

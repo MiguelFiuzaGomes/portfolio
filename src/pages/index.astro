@@ -1,0 +1,141 @@
+<!-- Include -->
+---
+import "../css/Main/index.css"
+import "../css/Global/global.css"
+import "../css/Global/navbar.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Miguel Fiuza Gomes - Portfolio</title>
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<div class="nav-bar">
+			<a href="/about" class="nav-button">About</a>
+			<a href="/projects" class="nav-button">Projects </a>
+			<a href="/cv" class="nav-button">CV</a>
+			<a href="/contacts" class="nav-button">Contact</a>
+		</div>
+
+		<!-- Hero -->
+		 <section class="hero">
+
+			<div class="hero-content">
+				<p class="hero-kicker">Game Developer Portfolio</p>
+				<p class="hero-title">Miguel Fiuza Gomes</p>
+				<p class="hero-text">
+					Portfolio of technical game development projects focused on graphics, procedural generation, gameplay systems, and interactive prototyping.
+				</p>
+
+				<div class="hero-links">
+					<a href="/projects" class="hero-button primary">View Projects</a>
+					<a href="/about" class="hero-button secondary">About Me</a>
+				</div>
+			</div>
+
+			<div class="technical-focus">
+				<span>Graphics Programming</span>
+				<span>Procedural Generation</span>
+				<span>Gameplay Systems</span>
+				<span>Multiplayer Networking</span>
+			</div>
+
+		 </section>
+
+
+
+		<!-- Projects -->
+		<div class="featured-projects">
+
+			<h1>Featured Projects</h1>
+			<p class="section-subtitle">
+  			Selected technical projects focused on rendering, gameplay systems,
+				networking, and procedural generation.
+			</p>
+
+			<div class="project-snapshots">
+				
+				<div class="card">
+					<a href="/projects/featured/msc-procedural-terrain" class="featured">
+						
+						<div class="project-image">
+							<img src="/ProjectSnapshots/MastersSnapshot.png" class="snapshot" alt="MSc Procedural Terrain Project Review"/>
+						</div>
+
+						<span class="project-title">Procedural Terrain System</span>
+
+						<div class="project-tags">
+							<span>Unity</span>
+							<span>C#</span>
+							<span>Procedural Generation</span>
+							<span>Noise</span>
+							<span>Biomes</span>
+							<span>Terrain</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="/projects/featured/dx11-rendering-pipeline" class="featured">
+						
+						<div class="project-image">
+							<img src="/ProjectSnapshots/RT-Render-DX11.png" class="snapshot" alt="Real-Time Render Pipeline with DX11"/>
+						</div>
+						
+						<span class="project-title"> DX11 Rendering Pipeline </span>
+						<div class="project-tags">
+							<span>DirectX11</span>
+							<span>C++</span>
+							<span>Rendering</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="/projects/featured/netcode-fps" class="featured">
+
+						<div class="project-image">
+							<img src="/ProjectSnapshots/netcode-fps.png" class="snapshot" alt="Unity Netcode FPS Prototype (Client-Server Architecture)"/>
+						</div>
+
+						<span class="project-title">Netcode FPS Prototype</span>
+						<div class="project-tags">
+							<span>Unity</span>
+							<span>C#</span>
+							<span>Netcode</span>
+							<span>Client-Server</span>
+							<span>Multiplayer</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="card">
+					<a href="/projects/featured/veilryders" class="featured">
+						
+						<div class="project-image">
+        			<img src="/ProjectSnapshots/veilryders.png" class="snapshot" alt="VeilRyders — Physics-Driven Snowboarding Prototype"/>
+      			</div>
+						
+						<span class="project-title">VeilRyders</span>
+						<div class="project-tags">
+							<span>Unreal Engine</span>
+							<span>C++</span>
+							<span>Physics</span>
+							<span>Gameplay Systems</span>
+							<span>Prototyping</span>
+							<span>Blueprints</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>
+

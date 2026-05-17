@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../base-layout.astro'
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <BaseLayout title={frontmatter.title}>
+      <div class="project-container">
+        <slot />
+
+        <!-- Repo or Itch URLs -->
+        {frontmatter.repoUrl || frontmatter.itchUrl || frontmatter.videoUrl ? (
+          <section class="project-links">
+
+            {frontmatter.repoUrl && (
+              <a
+                href={frontmatter.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Source Code
+              </a>
+            )}
+
+            {frontmatter.itchUrl && (
+              <a
+                href={frontmatter.itchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Project
+              </a>
+            )}
+
+            {frontmatter.videoUrl && (
+              <a
+                href={frontmatter.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Watch Gameplay
+              </a>
+            )}
+
+          </section>
+        ) : null}
+
+      </div>
+    </BaseLayout>
+  </body>
+</html>

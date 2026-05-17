@@ -1,0 +1,249 @@
+.hero, .featured-projects {
+  background: transparent;
+}
+
+/* Hero */
+.hero {
+  padding: 3rem 2rem 1.5rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555555;
+  
+}
+
+.hero-title {
+  margin: 0 0 1rem;
+  font-size: 4rem;
+  line-height: 1.05;
+  font-weight: 500;
+  color: #111111;
+}
+
+.hero-text {
+  margin: 0 0 2rem;
+  max-width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #3f3f3f;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border: 2px solid #111111;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-button.primary {
+  background-color: black;
+  color: #ffffff;
+}
+
+.hero-button.secondary {
+  background-color: black;
+  color: #ffffff;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.hero-button.primary:hover {
+  background-color: #2a2a2a;
+}
+
+.hero-button.secondary:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* Technical Focus */
+.technical-focus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+  max-width: 760px;
+}
+
+.technical-focus span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.section-subtitle {
+  max-width: 720px;
+  margin: -0.75rem 0 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Featured Projects */
+.featured-projects {
+  padding: 3rem 2rem 4rem;
+}
+
+.featured-projects:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.25px;
+  background: black;
+  opacity: 0.35;
+}
+
+.featured-projects h1 {
+  margin: 1.5rem 0 2rem;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #111111;
+}
+
+.project-snapshots {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  width: 340px;
+  display: flex;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(3px);
+  padding: 0.85rem;
+  border-radius: 10px;
+  box-shadow: 
+    0 12px 28px rgba(0, 0, 0, 0.12),
+    0 4px 10px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-title {
+  display: block;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-top: 0.25rem;
+  text-align: left;
+  min-height: 3em;
+}
+
+.project-tags {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tags span {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.45rem;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.featured:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+}
+
+.featured:hover .project-title {
+  text-decoration: underline;
+  transform: scale(1.05);
+  margin-left: 10px;
+}
+
+.snapshot {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #111111;
+  margin-bottom: 0.75rem;
+  background-color: inherit;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+  }
+
+  .featured-projects {
+    padding: 0 1.25rem 2.5rem;
+  }
+
+  .project-snapshots {
+    gap: 1.25rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* Technical Focus */
+  .technical-focus {
+    gap: 0.45rem;
+    margin-top: 1.4rem;
+  }
+
+  .technical-focus span {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

@@ -1,0 +1,38 @@
+---
+import "../css/Projects/projects.css";
+import "../css/Global/navbar.css";
+import "../css/Global/global.css";
+
+// BaseLayout.astro
+const { frontmatter ={}, title = "Miguel Fiuza Gomes | Portfolio" } = Astro.props;
+const pageTitle = frontmatter.title ?? title;
+
+
+
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{frontmatter.title}</title>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <a href="/" class="nav-button">Home</a>
+      <a href="/about" class="nav-button">About</a>
+      <a href="/projects" class="nav-button">Projects</a>
+      <a href="/cv" class="nav-button">CV</a>
+      <a href="/contacts" class="nav-button">Contact</a>
+    </nav>
+
+    <main>
+
+      <!-- Content -->
+      <slot />
+
+
+    </main>
+
+  </body>
+</html>

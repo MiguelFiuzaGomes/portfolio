@@ -1,0 +1,160 @@
+---
+import BaseLayout from './base-layout.astro'
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <BaseLayout title={frontmatter.title}>
+      <div class="project-container">
+        <slot />
+
+        <!-- Repo or Itch URLs -->
+        {frontmatter.repoUrl || frontmatter.itchUrl || frontmatter.videoUrl ? (
+          <section class="project-links">
+
+            {frontmatter.repoUrl && (
+              <a
+                href={frontmatter.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Source Code
+              </a>
+            )}
+
+            {frontmatter.itchUrl && (
+              <a
+                href={frontmatter.itchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                View Project
+              </a>
+            )}
+
+            {frontmatter.videoUrl && (
+              <a
+                href={frontmatter.videoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Watch Gameplay
+              </a>
+            )}
+
+          </section>
+        ) : null}
+
+        <!-- Gallery -->
+        <section class="project-section">
+          {frontmatter.gallery?.length > 0 && (
+            <section class="project-gallery">
+
+              <h2>Gallery</h2>
+
+              <div class="gallery-grid">
+
+                {frontmatter.gallery.map((image) => (
+
+                  <figure class="gallery-item">
+
+                  <button class="gallery-expand" data-lightbox-src={image.src} data-lightbox-alt={image.alt} type="button">
+
+                    <img src={image.src} alt={image.alt} />
+
+                  </button>
+
+                  {image.caption && (
+                    <figcaption> {image.caption} </figcaption>
+                  )}
+
+                  </figure>
+
+                ))}
+              
+              </div>
+            
+            </section>
+            
+          )}
+        </section>
+
+        <!-- Lightbox -->
+        <dialog class="image-lightbox" id="image-lightbox">
+
+          <button class="lightbox-close" type="button">
+            ×
+          </button>
+
+          <img src="" alt="" id="lightbox-image"/>
+
+        </dialog>
+
+        <script>
+          const lightbox = document.getElementById("image-lightbox");
+
+          const lightboxImage = document.getElementById("lightbox-image");
+
+          const closeButton = document.querySelector(".lightbox-close");
+
+          document.querySelectorAll(".gallery-expand, .technical-diagram img").forEach((item)=>{
+
+            item.addEventListener("click", ()=>{
+
+            const img = item.tagName==="IMG" ? item : item.querySelector("img");
+
+            lightboxImage.src = img.src;
+
+            lightboxImage.alt = img.alt;
+
+            lightbox.showModal();
+
+            });
+
+          });
+
+          closeButton.addEventListener("click", ()=>{
+            
+            lightbox.close();
+          });
+
+          lightbox.addEventListener("click", (event)=>{
+
+            if(event.target===lightbox)
+            {
+              lightbox.close();
+            }
+          });
+
+          lightbox.addEventListener("click", (event) => {
+
+              const rect =
+              lightboxImage.getBoundingClientRect();
+
+              const clickedInsideImage =
+                event.clientX >= rect.left &&
+                event.clientX <= rect.right &&
+                event.clientY >= rect.top &&
+                event.clientY <= rect.bottom;
+
+              if(!clickedInsideImage){
+                  lightbox.close();
+              }
+
+          });
+        </script>
+        
+      </div>
+    </BaseLayout>
+  </body>
+</html>

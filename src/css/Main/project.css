@@ -1,0 +1,188 @@
+/* Page */
+.projects-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem 5rem;
+}
+
+/* Project Grid */
+.project-content {
+  max-width: 900px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.project-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  text-decoration: none;
+  color: inherit;
+
+  padding: 1.75rem;
+  border-radius: 14px;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.project-row:hover {
+  background: rgba(0, 0, 0, 0.04);
+  transform: translateX(6px);
+}
+
+
+.project-image img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-content h3 {
+  margin: 0 0 0.55rem 0;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.project-content p {
+  margin: 0 0 0.6rem 0;
+  max-width: 850px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+}
+
+/* Other Projects */
+.other-projects{
+  margin-top: 1rem;
+}
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.section-divider h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2f2f2f;
+  white-space: nowrap;
+}
+
+.other-project-row {
+  display: block;
+  padding: 1.5rem 1.75rem;
+}
+
+.other-project-row:hover
+{
+  transform: translateX(6px);
+}
+
+.other-project-card {
+  border-left: 4px solid #3f3f3f;
+}
+
+/* Sections */
+section {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+
+  .projects-page {
+    padding: 0 1.25rem 4rem;
+  }
+
+  .project-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem;
+  }
+
+  .project-row:hover {
+    transform: none;
+  }
+
+  .project-image,
+  .project-image img {
+    width: 100%;
+  }
+
+  .project-image img {
+    height: auto;
+    max-height: 220px;
+  }
+
+  .project-content h3 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .project-content p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .project-tech {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+    /* Other Projects */
+  .other-projects{
+    margin-top: 1rem;
+  }
+
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .section-divider h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2f2f2f;
+    white-space: nowrap;
+  }
+
+  .other-project-row {
+    display: block;
+    padding: 1.5rem 1.75rem;
+  }
+}

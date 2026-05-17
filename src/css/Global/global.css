@@ -1,0 +1,21 @@
+/* File Wise */
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #ececec 0%, #dcdcdc 100%);
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
