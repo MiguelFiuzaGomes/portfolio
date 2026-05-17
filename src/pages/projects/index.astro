@@ -3,6 +3,10 @@
 import "/src/css/Main/project.css"
 import "/src/css/Global/global.css"
 import "/src/css/Global/navbar.css"
+
+const base = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 ---
 
 <html lang="en">
@@ -17,10 +21,11 @@ import "/src/css/Global/navbar.css"
 
     <!-- Navigation -->
 		<div class="nav-bar">
-      <a href="/" class="nav-button">Home</a>
-			<a href="/about" class="nav-button">About</a>
-			<a href="/cv" class="nav-button">CV</a>
-			<a href="/contacts" class="nav-button">Contact</a>
+      <a href={`${base}`} class="nav-button">Home</a>
+			<a href={`${base}about`} class="nav-button">About</a>
+			<a href={`${base}projects`} class="nav-button">Projects</a>
+			<a href={`${base}cv`} class="nav-button">CV</a>
+			<a href={`${base}contacts`} class="nav-button">Contact</a>
 		</div>
 
     <main class="projects-page">
@@ -40,7 +45,7 @@ import "/src/css/Global/navbar.css"
           <a href="/projects/featured/msc-procedural-terrain" class="project-row">
             
             <div class="project-image">
-              <img src="/ProjectSnapshots/MastersSnapshot.png" class="snapshot" alt="MSc Procedural Terrain Project Review"/>
+              <img src={`${base}ProjectSnapshots/MastersSnapshot.png`} class="snapshot" alt="MSc Procedural Terrain Project Review"/>
             </div>
 
             <div class="project-content">
@@ -63,10 +68,10 @@ import "/src/css/Global/navbar.css"
         </div>
 
         <div class="project-card">
-          <a href="/projects/featured/dx11-rendering-pipeline" class="project-row">
+          <a href={`${base}projects/featured/dx11-rendering-pipeline`} class="project-row">
           
             <div class="project-image">
-              <img src="/ProjectSnapshots/RT-Render-DX11.png" class="snapshot" alt="Real-Time Render Pipeline with DX11"/>
+              <img src={`${base}ProjectSnapshots/RT-Render-DX11.png`} class="snapshot" alt="Real-Time Render Pipeline with DX11"/>
             </div>
 
             <div class="project-content">
@@ -88,10 +93,10 @@ import "/src/css/Global/navbar.css"
         </div>
 
         <div class="project-card">
-          <a href="/projects/featured/netcode-fps" class="project-row">
+          <a href={`${base}projects/featured/netcode-fps`} class="project-row">
           
           <div class="project-image">
-            <img src="/ProjectSnapshots/netcode-fps.png" class="snapshot" alt="Unity Netcode FPS Prototype (Client-Server Architecture)"/>
+            <img src={`${base}ProjectSnapshots/netcode-fps.png`} class="snapshot" alt="Unity Netcode FPS Prototype (Client-Server Architecture)"/>
           </div>
 
           <div class="project-content">
@@ -113,10 +118,10 @@ import "/src/css/Global/navbar.css"
         </div>
 
         <div class="project-card">
-          <a href="/projects/featured/veilryders" class="project-row">
+          <a href={`${base}projects/featured/veilryders`} class="project-row">
           
           <div class="project-image">
-            <img src="/ProjectSnapshots/veilryders.png" class="snapshot" alt="VeilRyders — Physics-Driven Snowboarding Prototype"/>
+            <img src={`${base}ProjectSnapshots/veilryders.png`} class="snapshot" alt="VeilRyders — Physics-Driven Snowboarding Prototype"/>
           </div>
 
           <div class="project-content">
@@ -151,7 +156,7 @@ import "/src/css/Global/navbar.css"
         <div class="projects-list">
 
           <div class="other-project-card">
-            <a href="/projects/other/sleeping-elements" class="other-project-row">
+            <a href={`${base}projects/other/sleeping-elements`} class="other-project-row">
               
               <div class="project-content">
                 <h3>Sleeping Elements</h3>
@@ -173,7 +178,7 @@ import "/src/css/Global/navbar.css"
 
 
           <div class="other-project-card">
-            <a href="/projects/other/ourobros" class="other-project-row">
+            <a href={`${base}projects/other/ourobros`} class="other-project-row">
 
               <div class="project-content">
                 <h3>Ourobros</h3>
@@ -196,7 +201,7 @@ import "/src/css/Global/navbar.css"
 
 
           <div class="other-project-card">
-            <a href="/projects/other/project-trigram" class="other-project-row">
+            <a href={`${base}projects/other/project-trigram`} class="other-project-row">
 
               <div class="project-content">
                 <h3>Project Trigram</h3>
