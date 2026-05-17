@@ -260,21 +260,21 @@ layout: ../../../layouts/netcode-fps.astro
   <h2>Technical Gallery</h2>
 
   <figure class="technical-diagram">
-    <img src="Projects/Netcode/semi-authorative-architecture.png" alt="semi-authorative-architecture">
+    <img src="/portfolio/Projects/Netcode/semi-authorative-architecture.png" alt="semi-authorative-architecture">
     <figcaption>
       Semi-authoritative client-server model balancing local responsiveness with server validation.
     </figcaption>
   </figure>
 
   <figure class="technical-diagram">
-    <img src="Projects/Netcode/client-prediction-reconciliation.png" alt="client-prediciton-reconciliation">
+    <img src="/portfolio/Projects/Netcode/client-prediction-reconciliation.png" alt="client-prediciton-reconciliation">
     <figcaption>
       Planned prediction and reconciliation flow for improving movement correction.
     </figcaption>
   </figure>
 
   <figure class="technical-diagram">
-    <img src="Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
+    <img src="/portfolio/Projects/Netcode/rollback-replay-buffers.png" alt="rollback-replay-buffers">
     <figcaption>
       Rollback and replay buffer concept for storing movement inputs across network ticks.
     </figcaption>
