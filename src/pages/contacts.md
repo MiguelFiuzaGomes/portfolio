@@ -89,8 +89,8 @@ layout: ../layouts/contacts.astro
     </div>
 
   <div class="contact-actions">
-      <a href="/projects" class="contact-button primary">View Projects</a>
-      <a href="/cv" class="contact-button secondary">View CV</a>
+      <a href="/portfolio/projects" class="contact-button primary">View Projects</a>
+      <a href="/portfolio/cv" class="contact-button secondary">View CV</a>
     </div>
   </section>
 
