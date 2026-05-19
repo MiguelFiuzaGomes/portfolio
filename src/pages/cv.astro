@@ -1,6 +1,7 @@
 ---
-import "../css/Global/navbar.css"
-import "../css/Global/global.css"
+import "../css/Global/navbar.css";
+import "../css/Global/footer.css";
+import "../css/Global/global.css";
 import "../css/Main/cv.css";
 
 const base = import.meta.env.BASE_URL.endsWith("/")
@@ -9,191 +10,222 @@ const base = import.meta.env.BASE_URL.endsWith("/")
 ---
 
 
+<html lang="en">
+  <head>
+    <title>Miguel Fiuza Gomes - CV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
 
-<head>
-  <title>Miguel Fiuza Gomes - CV</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
-</head>
 
+  <body>
+    <!-- Navigation -->
+    <div class="nav-bar">
+      <a href={`${base}`} class="nav-button">Home</a>
+      <a href={`${base}about`} class="nav-button">About</a>
+      <a href={`${base}projects`} class="nav-button">Projects</a>
+      <a href={`${base}contacts`} class="nav-button">Contact</a>
+    </div>
 
-  <!-- Navigation -->
-  <div class="nav-bar">
-    <a href={`${base}`} class="nav-button">Home</a>
-    <a href={`${base}about`} class="nav-button">About</a>
-    <a href={`${base}projects`} class="nav-button">Projects</a>
-    <a href={`${base}contacts`} class="nav-button">Contact</a>
-  </div>
-
-<section class="cv-page">
-  
-  <div class="cv-actions">
-    <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} download class="cv-button">
-      Download PDF
-    </a>
-    <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} target="_blank" class="cv-button secondary">
-      Open PDF
-    </a>
-  </div>
-
-  <article class="cv-sheet">
-    <header class="cv-header">
-      <h1>Miguel Fiuza Gomes</h1>
-      <p class="cv-role">Graduate Game Developer (Systems / Gameplay Programming)</p>
-
-      <div class="cv-contact">
-        <p>Lisbon, Portugal</p>
-        <p>
-          <a href="mailto:miguel.fiuza.gomes@gmail.com">miguel.fiuza.gomes@gmail.com</a>
-          <span>•</span>
-          <a href="https://github.com/MiguelFiuzaGomes" target="_blank" rel="noopener noreferrer">
-            github.com/MiguelFiuzaGomes
-          </a>
-        </p>
-        <p>
-          <a href="https://linkedin.com/in/miguel-fiuza-gomes" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/miguel-fiuza-gomes
-          </a>
-        </p>
+    <section class="cv-page">
+      
+      <div class="cv-actions">
+        <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} download class="cv-button">
+          Download PDF
+        </a>
+        <a href={`${base}cv/miguel-fiuza-gomes-cv.pdf`} target="_blank" class="cv-button secondary">
+          Open PDF
+        </a>
       </div>
-    </header>
 
-    <section class="cv-section">
-      <h2>Profile</h2>
-      <p>
-        Graduate game developer specialising in procedural generation, real-time systems, and
-        engine-level programming. Experienced in designing modular generation pipelines,
-        implementing networked gameplay architectures, and building rendering systems using
-        Unity, Unreal Engine, and DirectX 11. Strong focus on performance-aware design,
-        scalability, and robust system architecture.
-      </p>
+      <article class="cv-sheet">
+        <header class="cv-header">
+          <h1>Miguel Fiuza Gomes</h1>
+          <p class="cv-role">Graduate Game Developer (Systems / Gameplay Programming)</p>
+
+          <div class="cv-contact">
+            <p>Lisbon, Portugal</p>
+            <p>
+              <a href="mailto:miguel.fiuza.gomes@gmail.com">miguel.fiuza.gomes@gmail.com</a>
+              <span>•</span>
+              <a href="https://github.com/MiguelFiuzaGomes" target="_blank" rel="noopener noreferrer">
+                github.com/MiguelFiuzaGomes
+              </a>
+            </p>
+            <p>
+              <a href="https://linkedin.com/in/miguel-fiuza-gomes" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/miguel-fiuza-gomes
+              </a>
+            </p>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2>Profile</h2>
+          <p>
+            Graduate game developer specialising in procedural generation, real-time systems, and
+            engine-level programming. Experienced in designing modular generation pipelines,
+            implementing networked gameplay architectures, and building rendering systems using
+            Unity, Unreal Engine, and DirectX 11. Strong focus on performance-aware design,
+            scalability, and robust system architecture.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2>Technical Skills</h2>
+          <ul class="cv-list">
+            <li><strong>Languages:</strong> C#, C++, HLSL</li>
+            <li><strong>Engines & Frameworks:</strong> Unity, Unreal Engine, DirectX 11</li>
+            <li>
+              <strong>Core Areas:</strong> Procedural Generation, Multiplayer Networking,
+              Real-Time Rendering, Physics Systems, Performance Optimisation, Systems Architecture
+            </li>
+            <li><strong>Tools:</strong> GitHub, Visual Studio</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2>Selected Projects</h2>
+
+          <div class="cv-project">
+            <h3>Procedural Terrain Generation System (MSc Project) — Unity, C#</h3>
+            <ul class="cv-list">
+              <li>
+                Architected a modular procedural pipeline separating terrain generation, biome
+                evaluation, and feature application, enabling scalable and extensible world generation
+              </li>
+              <li>
+                Implemented rule-based biome classification using domain-warped noise fields
+                (temperature, humidity, elevation), enabling controlled biome distribution across
+                large-scale procedural environments
+              </li>
+              <li>
+                Developed infinite terrain streaming with chunk-based generation, including
+                normalisation and seam handling across chunk boundaries
+              </li>
+              <li>
+                Integrated shader-based biome blending to transition from discrete biome assignment
+                to continuous visual output
+              </li>
+              <li>
+                Enabled generation of large-scale, diverse terrain with controlled biome distribution
+                and seamless chunk transitions at runtime
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-project">
+            <h3>Multiplayer FPS Netcode Prototype — Unity, Netcode for GameObjects</h3>
+            <ul class="cv-list">
+              <li>
+                Designed a semi-authoritative networking architecture balancing client-side
+                responsiveness with authoritative server validation to maintain consistency under
+                network latency
+              </li>
+              <li>
+                Implemented client-side movement and shooting with server reconciliation for
+                divergence correction
+              </li>
+              <li>
+                Synchronised player state (position, rotation, actions) across networked clients in
+                real time
+              </li>
+              <li>
+                Analysed latency, prediction errors, and desynchronisation through testing and
+                iteration
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-project">
+            <h3>DirectX 11 Real-Time Rendering Pipeline — C++, HLSL</h3>
+            <ul class="cv-list">
+              <li>
+                Implemented a real-time rendering pipeline from scratch, including shader management
+                and lighting systems
+              </li>
+              <li>
+                Developed HLSL shaders and managed GPU/CPU interaction, including buffer updates and
+                rendering flow
+              </li>
+              <li>
+                Worked directly with graphics pipeline stages, gaining low-level understanding of
+                rendering flow and GPU constraints
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-project">
+            <h3>Snowboarding Physics Prototype (VeilRyders) — Unreal Engine</h3>
+            <ul class="cv-list">
+              <li>
+                Implemented slope-aware movement using surface normals and velocity vectors to achieve
+                physically coherent traversal behaviour
+              </li>
+              <li>
+                Tuned physics parameters to balance realism with responsive and controllable gameplay
+              </li>
+              <li>
+                Iterated on movement systems to improve player feedback and consistency
+              </li>
+              <li>
+                Collaborated within a multidisciplinary team across design and engineering
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Education</h2>
+
+          <div class="cv-entry">
+            <h3>MSc in Computer Games Technology</h3>
+            <p>Abertay University — 2024–2025</p>
+          </div>
+
+          <div class="cv-entry">
+            <h3>BSc in Games and Apps Development</h3>
+            <p>IADE — 2019–2023</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Languages</h2>
+          <ul class="cv-list">
+            <li><strong>English:</strong> C2 awarded by the British Council</li>
+            <li><strong>Portuguese:</strong> Native</li>
+          </ul>
+        </section>
+      </article>
     </section>
 
-    <section class="cv-section">
-      <h2>Technical Skills</h2>
-      <ul class="cv-list">
-        <li><strong>Languages:</strong> C#, C++, HLSL</li>
-        <li><strong>Engines & Frameworks:</strong> Unity, Unreal Engine, DirectX 11</li>
-        <li>
-          <strong>Core Areas:</strong> Procedural Generation, Multiplayer Networking,
-          Real-Time Rendering, Physics Systems, Performance Optimisation, Systems Architecture
-        </li>
-        <li><strong>Tools:</strong> GitHub, Visual Studio</li>
-      </ul>
-    </section>
+    <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-content">
 
-    <section class="cv-section">
-      <h2>Selected Projects</h2>
+          <h3>Miguel Fiuza Gomes</h3>
+          <p>Game Developer · Graphics Programming · Technical Design</p>
 
-      <div class="cv-project">
-        <h3>Procedural Terrain Generation System (MSc Project) — Unity, C#</h3>
-        <ul class="cv-list">
-          <li>
-            Architected a modular procedural pipeline separating terrain generation, biome
-            evaluation, and feature application, enabling scalable and extensible world generation
-          </li>
-          <li>
-            Implemented rule-based biome classification using domain-warped noise fields
-            (temperature, humidity, elevation), enabling controlled biome distribution across
-            large-scale procedural environments
-          </li>
-          <li>
-            Developed infinite terrain streaming with chunk-based generation, including
-            normalisation and seam handling across chunk boundaries
-          </li>
-          <li>
-            Integrated shader-based biome blending to transition from discrete biome assignment
-            to continuous visual output
-          </li>
-          <li>
-            Enabled generation of large-scale, diverse terrain with controlled biome distribution
-            and seamless chunk transitions at runtime
-          </li>
-        </ul>
-      </div>
+          <div class="footer-links">
+            <a href="https://github.com/MiguelFiuzaGomes" target="_blank" class="contact-link">
+              github.com/MiguelFiuzaGomes
+            </a>
+            <a href="https://linkedin.com/in/miguel-fiuza-gomes" target="_blank" class="contact-link">
+              linkedin.com/in/miguel-fiuza-gomes
+            </a>
+            <a href={`${base}cv`}>CV</a>
+            <a href="mailto:miguel.fiuza.gomes@gmail.com" class="contact-link">
+              miguel.fiuza.gomes@gmail.com
+            </a>
+          </div>
 
-      <div class="cv-project">
-        <h3>Multiplayer FPS Netcode Prototype — Unity, Netcode for GameObjects</h3>
-        <ul class="cv-list">
-          <li>
-            Designed a semi-authoritative networking architecture balancing client-side
-            responsiveness with authoritative server validation to maintain consistency under
-            network latency
-          </li>
-          <li>
-            Implemented client-side movement and shooting with server reconciliation for
-            divergence correction
-          </li>
-          <li>
-            Synchronised player state (position, rotation, actions) across networked clients in
-            real time
-          </li>
-          <li>
-            Analysed latency, prediction errors, and desynchronisation through testing and
-            iteration
-          </li>
-        </ul>
-      </div>
+          <p class="footer-meta">
+            Built with Astro · Hosted on GitHub Pages
+          </p>
 
-      <div class="cv-project">
-        <h3>DirectX 11 Real-Time Rendering Pipeline — C++, HLSL</h3>
-        <ul class="cv-list">
-          <li>
-            Implemented a real-time rendering pipeline from scratch, including shader management
-            and lighting systems
-          </li>
-          <li>
-            Developed HLSL shaders and managed GPU/CPU interaction, including buffer updates and
-            rendering flow
-          </li>
-          <li>
-            Worked directly with graphics pipeline stages, gaining low-level understanding of
-            rendering flow and GPU constraints
-          </li>
-        </ul>
-      </div>
+        </div>
+      </footer>
 
-      <div class="cv-project">
-        <h3>Snowboarding Physics Prototype (VeilRyders) — Unreal Engine</h3>
-        <ul class="cv-list">
-          <li>
-            Implemented slope-aware movement using surface normals and velocity vectors to achieve
-            physically coherent traversal behaviour
-          </li>
-          <li>
-            Tuned physics parameters to balance realism with responsive and controllable gameplay
-          </li>
-          <li>
-            Iterated on movement systems to improve player feedback and consistency
-          </li>
-          <li>
-            Collaborated within a multidisciplinary team across design and engineering
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2>Education</h2>
-
-      <div class="cv-entry">
-        <h3>MSc in Computer Games Technology</h3>
-        <p>Abertay University — 2024–2025</p>
-      </div>
-
-      <div class="cv-entry">
-        <h3>BSc in Games and Apps Development</h3>
-        <p>IADE — 2019–2023</p>
-      </div>
-    </section>
-
-    <section class="cv-section">
-      <h2>Languages</h2>
-      <ul class="cv-list">
-        <li><strong>English:</strong> C2 awarded by the British Council</li>
-        <li><strong>Portuguese:</strong> Native</li>
-      </ul>
-    </section>
-  </article>
-</section>
+  </body>
+</html>
