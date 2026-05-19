@@ -45,11 +45,13 @@
 
 .hero-button {
   display: inline-block;
-  padding: 0.9rem 1.4rem;
-  border: 2px solid #111111;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #3f3f3f;
+  color: #ffffff;
+  border: 1px solid #3f3f3f;
+  transition: 0.2s ease;
 }
 
 .hero-button.primary {
@@ -58,12 +60,13 @@
 }
 
 .hero-button.secondary {
-  background-color: black;
-  color: #ffffff;
+  background: transparent;
+  color: #3f3f3f;
 }
 
 .hero-button:hover {
-  transform: translateY(-2px);
+  background: #2d2d2d;
+  border-color: #2d2d2d;
 }
 
 .hero-button.primary:hover {
@@ -71,9 +74,10 @@
 }
 
 .hero-button.secondary:hover {
-  background-color: #111111;
+  background: #3f3f3f;
   color: #ffffff;
 }
+
 
 /* Technical Focus */
 .technical-focus {
